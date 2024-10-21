@@ -243,7 +243,7 @@
             let code = editor.getValue();
             $("#popupContainer").style.display = "block";
             $("#popup").innerText = "Please wait while getting output using AI model " + $("#models").value;
-            const response = await fetch('/predictJavaVersion', {
+            const response = await fetch('/predictOutput', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
